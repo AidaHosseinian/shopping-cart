@@ -1,0 +1,18 @@
+$padding-left: 15px;
+$max-width: 800px;
+$footer-width: calc( ( #{$max-width} - #{$padding-left} ));
+
+.footer {
+    font-size: 12px;
+    background-color: #282c34;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    max-width: $footer-width;
+    margin: auto;
+    border-radius: 0 0 5px 5px;
+    padding-left: $padding-left;
+}

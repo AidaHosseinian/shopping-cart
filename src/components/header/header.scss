@@ -1,0 +1,46 @@
+.header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5px 5px 0 0;
+
+  &__image {
+    width: 100px;
+    flex: 0 0 150px;
+  }
+
+  &__shopping-card {
+    margin: auto;
+  }
+
+  &__search-bar {
+    display: flex;
+    flex: 1;
+    width:550px;
+    background: #fff;
+    border-radius: 28px;
+    align-items: center;
+    padding: 14px;
+
+    &__search-input {
+      border: none;
+      outline: none;
+      background: transparent;
+      flex: 1;
+    }
+  }
+
+  a {
+    flex: 0 0 50px;
+    margin-left: 20px;  
+  }
+}
+
+

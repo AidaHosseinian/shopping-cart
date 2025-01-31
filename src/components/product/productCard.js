@@ -15,8 +15,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="product-card">
-      <div className="product-card__picture-frame">
-        <img className="product-card__picture-frame__image" alt={product.name} src={product.image}/>
+      <div className="product-card__picture-frame" style={{backgroundImage: `url(./images/product-${product.id}.jpg)`}}> 
       </div>
       <h3>{product.name}</h3>
       <p>${product.price.toFixed(2)}</p>

@@ -14,6 +14,10 @@
   &__image {
     width: 100px;
     flex: 0 0 150px;
+
+    @media (max-width: 450px) {
+      flex: 0 0 80px;
+    }
   }
 
   &__shopping-card {
@@ -29,6 +33,10 @@
     align-items: center;
     padding: 14px;
 
+    @media (max-width: 450px) {
+      padding: 10px;
+    }
+
     &__search-input {
       border: none;
       outline: none;
@@ -40,6 +48,10 @@
   a {
     flex: 0 0 50px;
     margin-left: 20px;  
+
+    @media (max-width: 450px) {
+      margin-left: 45px;
+    }  
   }
 }
 

@@ -47,11 +47,23 @@
 
   a {
     flex: 0 0 50px;
-    margin-left: 20px;  
+    margin-left: 20px; 
+    position: relative;
 
     @media (max-width: 450px) {
       margin-left: 45px;
     }  
+  }
+
+  
+  &__cart-counter {
+    position: absolute;
+    bottom: 75%;
+    left: 30%;
+    background-color: #cb3838;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 0 4px;
   }
 }
 

@@ -1,7 +1,3 @@
-$padding-left: 15px;
-$max-width: 800px;
-$footer-width: calc( ( #{$max-width} - #{$padding-left} ));
-
 .footer {
     font-size: 12px;
     background-color: #282c34;
@@ -11,8 +7,8 @@ $footer-width: calc( ( #{$max-width} - #{$padding-left} ));
     align-items: center;
     justify-content: left;
     color: white;
-    max-width: $footer-width;
+    max-width: 800px;
     margin: auto;
     border-radius: 0 0 5px 5px;
-    padding-left: $padding-left;
+    padding-left: 15px;
 }

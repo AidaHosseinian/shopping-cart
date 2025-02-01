@@ -5,11 +5,9 @@ import AidaLogo from '../../images/logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useStore } from "../../store/store";
-
 import {filterItems} from "../../store/reducer.js"
 
 function Header() {
-    //const [query, setQuery] = useState([])
     // read store
     const [store, dispatch] = useStore();
     
@@ -31,6 +29,7 @@ function Header() {
             </div>
             <a link="#">
                 <FontAwesomeIcon icon={faCartShopping} />
+                <span className="header__cart-counter">{store.basketProducts.length}</span>
             </a>
         </header>
     );

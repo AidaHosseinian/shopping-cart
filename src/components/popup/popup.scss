@@ -1,0 +1,107 @@
+.popup {
+    display: none;
+    background-color: rgba(0,0,0,.75);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+        width: 90%;
+        max-width: 800px;
+        margin-top: -20vh;
+        margin-left:-15px;
+
+        &__header {
+            background-color: #0f3a9d;
+            padding: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+
+            svg {
+                width: 100px;
+                display: block;
+                margin: 20px auto;
+            }
+        }
+
+        &__close-btn {
+            color: white;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            max-width: 800px;
+
+            &__img {
+                max-width: 100px;
+                border-radius: 10px 0 0 10px;
+            }
+
+            &__title {
+                width: 50%;
+                margin: auto;
+                text-align: center;
+
+                h3 {
+                    padding: 5px;
+                }
+
+                span{
+                    font-size: 14px;
+                    padding: 5px;
+                }
+            }
+
+            &__quantity {
+                width: 50%;
+                margin: auto;
+                text-align: center;
+
+                &__btn-minus{
+                    color: red;
+                    margin-right: 5px;
+                }
+
+                &__btn-plus{
+                    color: green;
+                    margin-left: 5px;
+                }
+            }
+
+            &__price {
+                width: 50%;
+                margin: auto;
+                text-align: center;
+            }
+
+            &__delete-btn {
+                color: red;
+            }
+        }
+   }
+
+   &__show {
+    display: flex;
+   }
+}

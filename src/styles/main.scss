@@ -1,6 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
+.main-container {
+    background-color: #efefef;
+    height: auto; //If height of content is more than 100vh - container's height will be height of it's content
+    min-height: 100vh; 
+    max-width: 800px;
+    margin: auto; 
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+}

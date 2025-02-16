@@ -1,6 +1,6 @@
 import products from "../data/products";
 import { useStore } from "../store/store";
-import ProductCard from "../components/product/productCard";
+import ProductCard from "../components/product/productCart";
 
 export default function ProductList() {
     const [store] = useStore();

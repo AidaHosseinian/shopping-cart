@@ -5,6 +5,7 @@ import './styles/main.scss';
 import { initialState, reducer } from './store/reducer.js';
 import { StoreProvider } from './store/store.js';
 import ProductList from './pages/ProductList.jsx';
+import PopUp from "./components/popup/PopUp.js";
 
 function App() { 
 
@@ -13,8 +14,8 @@ function App() {
     
     <div className="main-container">
       <ProductList />
+      <PopUp />
     </div>
-
     <Footer />
   </StoreProvider>);
 }
